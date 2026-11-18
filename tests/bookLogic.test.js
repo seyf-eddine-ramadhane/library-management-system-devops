@@ -20,7 +20,8 @@ const sampleBook = {
 
 test("Should add a new book", () => {
     const result = addBook([], sampleBook);
-    assert.equal(result.length, 100);
+    assert.equal(result.length, 1
+    );
     assert.equal(result[0].title, "Clean Code");
 });
 
