@@ -1,0 +1,11 @@
+
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "Library Management System with Jenkins CI/CD",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:junit": "node --test --test-reporter=junit --test-reporter-destination=test-results.xml"
+  }
+}

@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263449;
+}
+
+header {
+    background: #203864;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card, .form-section, .books-section {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 0;
+}
+
+.form-section, .books-section {
+    margin-top: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccd4df;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 150px;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #eef2ff;
+}
+
+.action-button {
+    margin: 3px;
+}
+
+.delete-button {
+    background: #dc2626;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+@media (max-width: 650px) {
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Library Management System</h1>
+        <p>Manage your library easily</p>
+    </header>
+
+    <main>
+        <section class="statistics">
+            <div class="stat-card">
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Available</h3>
+                <p id="availableBooks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Borrowed</h3>
+                <p id="borrowedBooks">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add a New Book</h2>
+            <form id="bookForm">
+                <input id="title" placeholder="Book title" required>
+                <input id="author" placeholder="Author name" required>
+                <input id="year" type="number" placeholder="Publication year"
+                    min="1" max="9999" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section class="books-section">
+            <h2>Library Collection</h2>
+            <input id="searchInput" placeholder="Search by title or author...">
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookList"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
